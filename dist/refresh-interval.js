@@ -12,6 +12,9 @@ var __classPrivateFieldSet = (this && this.__classPrivateFieldSet) || function (
     return value;
 };
 var _milliseconds;
+/**
+ * @deprecated
+ */
 export default class RefreshInterval extends Map {
     constructor(milliseconds, callback, values, start = true) {
         super(values);

@@ -1,3 +1,6 @@
+/**
+ * @deprecated
+ */
 export default class TimeToLive extends Map {
     /**
      * @param milliseconds

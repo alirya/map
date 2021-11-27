@@ -1,3 +1,6 @@
+/**
+ * @deprecated
+ */
 export default class TimeToLive<Key, Value> extends Map<Key, Value> {
     milliseconds: number;
     private timeouts;

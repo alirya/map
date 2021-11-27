@@ -1,5 +1,5 @@
-import Sort from "../../../dist/function/sort";
-import Shuffle from "@dikac/t-array/shuffle";
+import Sort from "../../../dist/function/sort-parameters";
+import Shuffle from "@dikac/t-array/shuffle-parameters";
 
 it("force console log", () => { spyOn(console, 'log').and.callThrough();});
 

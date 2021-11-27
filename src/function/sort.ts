@@ -1,17 +1,10 @@
-import BaseSort from "../sort";
+import SortParameters from "./sort-parameters";
+import SortParameter from "./sort-parameter";
 
-export default function Sort<Key, Value>(
-    map : Map<Key, Value>,
-    filter : (pair1:[key:Key, value:Value], pair2:[key:Key, value:Value])=>number
-) : void {
+namespace Sort {
 
-    const sorted = BaseSort(map, filter);
-
-    map.clear();
-
-    for(const [key, value] of sorted.entries()) {
-
-        map.set(key, value);
-    }
-
+    export const Parameters = SortParameters
+    export const Parameter = SortParameter
 }
+
+export default Sort;

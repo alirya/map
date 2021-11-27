@@ -1,11 +1,10 @@
-export default function Sort<Key, Value>(
-    map : Map<Key, Value>,
-    filter : (pair1:[key:Key, value:Value], pair2:[key:Key, value:Value])=>number
-) : Map<Key, Value> {
+import SortParameters from "./sort-parameters";
+import SortParameter from "./sort-parameter";
 
-    const arrays : [Key, Value][] = Array.from(map);
+namespace Sort {
 
-    const sorted = arrays.sort(filter);
-
-    return new Map<Key, Value>(sorted)
+    export const Parameters = SortParameters
+    export const Parameter = SortParameter
 }
+
+export default Sort;

@@ -1,9 +1,9 @@
-import BaseSortKey from "../sort-key";
-export default function SortKey(map, filter) {
-    const sorted = BaseSortKey(map, filter);
-    map.clear();
-    for (const [key, value] of sorted.entries()) {
-        map.set(key, value);
-    }
-}
+import SortKeyParameters from "./sort-key-parameters";
+import SortKeyParameter from "./sort-key-parameter";
+var SortKey;
+(function (SortKey) {
+    SortKey.Parameters = SortKeyParameters;
+    SortKey.Parameter = SortKeyParameter;
+})(SortKey || (SortKey = {}));
+export default SortKey;
 //# sourceMappingURL=sort-key.js.map

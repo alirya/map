@@ -1,16 +1,10 @@
+import SortKeyParameters from "./sort-key-parameters";
+import SortKeyParameter from "./sort-key-parameter";
 
-export default function SortKey<Key, Value>(
-    map : Map<Key, Value>,
-    filter : (key1:Key, key2:Key)=>number
-) : Map<Key, Value> {
+namespace SortKey {
 
-    const arrays : [Key, Value][] = Array.from(map);
-
-    const sorted = arrays.sort(function(value1, value2) {
-
-        return filter(value1[0], value2[0]);
-    });
-
-    return new Map<Key, Value>(sorted);
+    export const Parameters = SortKeyParameters
+    export const Parameter = SortKeyParameter
 }
 
+export default SortKey;

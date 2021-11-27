@@ -1,1 +1,0 @@
-{"version":3,"file":"from-iterable-callback.js","sourceRoot":"","sources":["../src/from-iterable-callback.ts"],"names":[],"mappings":"AAAA,MAAM,CAAC,OAAO,UAAU,oBAAoB,CACxC,QAA0B,EAC1B,QAAiC,EACjC,MAAwB,IAAI,GAAG,EAAc;IAG7C,KAAI,IAAI,KAAK,IAAI,QAAQ,EAAE;QAEvB,GAAG,CAAC,GAAG,CAAC,QAAQ,CAAC,KAAK,CAAC,EAAE,KAAK,CAAC,CAAC;KACnC;IAED,OAAO,GAAG,CAAC;AACf,CAAC"}

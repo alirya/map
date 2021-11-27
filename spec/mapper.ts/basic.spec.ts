@@ -1,4 +1,4 @@
-import Mapper from "../../dist/mapper";
+import Mapper from "../../dist/mapper-parameters";
 
 it("force console log", () => { spyOn(console, 'log').and.callThrough();});
 

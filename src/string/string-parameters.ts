@@ -1,6 +1,6 @@
-export default function String (
+export default function StringParameters (
     map : Map<string, string>,
-    dataDelimiter : string,
+    delimiter : string,
     associativeDelimiter : string,
 ) : string {
 
@@ -11,7 +11,7 @@ export default function String (
         buffer.push(key + associativeDelimiter + value);
     }
 
-    return buffer.join(dataDelimiter);
+    return buffer.join(delimiter);
 }
 
 

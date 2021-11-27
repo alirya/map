@@ -1,0 +1,1 @@
+{"version":3,"file":"first.js","sourceRoot":"","sources":["../../src/any/first.ts"],"names":[],"mappings":"AAAA,MAAM,CAAC,OAAO,UAAU,KAAK,CAAO,GAAe;IAE/C,KAAK,MAAM,CAAC,GAAG,EAAE,KAAK,CAAC,IAAI,GAAG,EAAE;QAE5B,OAAO,CAAC,GAAG,EAAE,KAAK,CAAC,CAAC;KACvB;IAED,OAAO,SAAS,CAAC;AACrB,CAAC"}

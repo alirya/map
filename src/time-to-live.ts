@@ -1,5 +1,8 @@
 import Timeout = NodeJS.Timeout;
 
+/**
+ * @deprecated
+ */
 export default class TimeToLive<Key, Value> extends Map<Key, Value> {
 
     private timeouts : Map<Key, Timeout> = new Map<Key, Timeout>();

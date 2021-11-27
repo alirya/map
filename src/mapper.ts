@@ -1,24 +1,10 @@
-/**
- * map a {@see Map} object
- *
- * Mapper name taken to avoid conflict with {@see Map}
- *
- * @param source
- * @param map
- */
-export default function Mapper<
-    Key,
-    Value,
-    MappedKey,
-    MappedValue,
->(
-    source: Map<Key, Value>,
-    map:(key: Key, value: Value)=>[MappedKey, MappedValue]
-) : Map<MappedKey, MappedValue> {
+import MapperParameters from "./mapper-parameters";
+import MapperParameter from "./mapper-parameter";
 
-    const result = new Map<MappedKey, MappedValue>();
+namespace Mapper {
 
-    source.forEach((value, key) => result.set(...map(key, value)));
-
-    return result;
+    export const Parameters = MapperParameters
+    export const Parameter = MapperParameter
 }
+
+export default Mapper;

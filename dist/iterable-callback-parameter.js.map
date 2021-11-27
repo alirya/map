@@ -1,0 +1,1 @@
+{"version":3,"file":"iterable-callback-parameter.js","sourceRoot":"","sources":["../src/iterable-callback-parameter.ts"],"names":[],"mappings":"AAKA,OAAO,0BAA0B,MAAM,gCAAgC,CAAC;AAsBxE,MAAM,CAAC,OAAO,UAAU,yBAAyB,CAC7C,EACI,KAAK,EACL,QAAQ,EACR,QAAQ,EACR,GAAG,GAAG,IAAI,GAAG,EAAY,EAIK;IAGlC,OAAO,0BAA0B,CAAC,QAAQ,IAAI,KAAK,EAAE,QAAQ,EAAE,GAAG,CAAC,CAAC;AACxE,CAAC"}

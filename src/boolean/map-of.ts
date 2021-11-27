@@ -1,23 +1,10 @@
+import MapOfParameters from "./map-of-parameters";
+import MapOfParameter from "./map-of-parameter";
 
-export default function MapOf<Key, Value>(
-    map : Map<Key, Value>,
-    key : (key:unknown)=>key is Key,
-    value : (value:unknown)=>value is Value,
-) : map is Map<Key, Value> {
+namespace MapOf {
 
-    for (let [k, v] of map) {
-
-        if(!key(k)) {
-
-            return false;
-        }
-
-        if(!value(v)) {
-
-            return false;
-        }
-    }
-
-    return true;
-
+    export const Parameters = MapOfParameters
+    export const Parameter = MapOfParameter
 }
+
+export default MapOf;

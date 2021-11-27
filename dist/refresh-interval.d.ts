@@ -1,3 +1,6 @@
+/**
+ * @deprecated
+ */
 export default class RefreshInterval<Key, Value, Return = any> extends Map<Key, Value> {
     #private;
     callback: (set: RefreshInterval<Key, Value>) => Return;

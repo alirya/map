@@ -1,20 +1,9 @@
-/**
- * replace mat with another map
- *
- * replace value one by one without clearing destination
- *
- * @param destination
- * @param source
- * @constructor
- */
-export default function Replace(destination, source) {
-    // remove destination which does not exist in source
-    destination.forEach((value, key) => {
-        if (!source.has(key)) {
-            destination.delete(key);
-        }
-    });
-    source.forEach((value, key) => destination.set(key, value));
-    return destination;
-}
+import ReplaceParameters from "./replace-parameters";
+import ReplaceParameter from "./replace-parameter";
+var Replace;
+(function (Replace) {
+    Replace.Parameters = ReplaceParameters;
+    Replace.Parameter = ReplaceParameter;
+})(Replace || (Replace = {}));
+export default Replace;
 //# sourceMappingURL=replace.js.map

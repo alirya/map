@@ -1,1 +1,7 @@
-export default function Sort<Key, Value>(map: Map<Key, Value>, filter: (pair1: [key: Key, value: Value], pair2: [key: Key, value: Value]) => number): Map<Key, Value>;
+import SortParameters from "./sort-parameters";
+import SortParameter from "./sort-parameter";
+declare namespace Sort {
+    const Parameters: typeof SortParameters;
+    const Parameter: typeof SortParameter;
+}
+export default Sort;

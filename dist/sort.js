@@ -1,6 +1,9 @@
-export default function Sort(map, filter) {
-    const arrays = Array.from(map);
-    const sorted = arrays.sort(filter);
-    return new Map(sorted);
-}
+import SortParameters from "./sort-parameters";
+import SortParameter from "./sort-parameter";
+var Sort;
+(function (Sort) {
+    Sort.Parameters = SortParameters;
+    Sort.Parameter = SortParameter;
+})(Sort || (Sort = {}));
+export default Sort;
 //# sourceMappingURL=sort.js.map

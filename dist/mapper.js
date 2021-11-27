@@ -1,14 +1,9 @@
-/**
- * map a {@see Map} object
- *
- * Mapper name taken to avoid conflict with {@see Map}
- *
- * @param source
- * @param map
- */
-export default function Mapper(source, map) {
-    const result = new Map();
-    source.forEach((value, key) => result.set(...map(key, value)));
-    return result;
-}
+import MapperParameters from "./mapper-parameters";
+import MapperParameter from "./mapper-parameter";
+var Mapper;
+(function (Mapper) {
+    Mapper.Parameters = MapperParameters;
+    Mapper.Parameter = MapperParameter;
+})(Mapper || (Mapper = {}));
+export default Mapper;
 //# sourceMappingURL=mapper.js.map

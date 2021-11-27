@@ -1,1 +1,7 @@
-export default function MapOf<Key, Value>(map: Map<Key, Value>, key: (key: unknown) => key is Key, value: (value: unknown) => value is Value): map is Map<Key, Value>;
+import MapOfParameters from "./map-of-parameters";
+import MapOfParameter from "./map-of-parameter";
+declare namespace MapOf {
+    const Parameters: typeof MapOfParameters;
+    const Parameter: typeof MapOfParameter;
+}
+export default MapOf;

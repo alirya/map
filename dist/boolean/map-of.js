@@ -1,12 +1,9 @@
-export default function MapOf(map, key, value) {
-    for (let [k, v] of map) {
-        if (!key(k)) {
-            return false;
-        }
-        if (!value(v)) {
-            return false;
-        }
-    }
-    return true;
-}
+import MapOfParameters from "./map-of-parameters";
+import MapOfParameter from "./map-of-parameter";
+var MapOf;
+(function (MapOf) {
+    MapOf.Parameters = MapOfParameters;
+    MapOf.Parameter = MapOfParameter;
+})(MapOf || (MapOf = {}));
+export default MapOf;
 //# sourceMappingURL=map-of.js.map
