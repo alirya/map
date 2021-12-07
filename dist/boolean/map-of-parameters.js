@@ -1,4 +1,4 @@
-export default function MapOfParameters(map, key, value) {
+export default function MapOfParameters(map, value, key = function (v) { return true; }) {
     for (let [k, v] of map) {
         if (!key(k)) {
             return false;

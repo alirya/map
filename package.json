@@ -1,15 +1,15 @@
 {
   "name": "@dikac/t-map",
-  "version": "0.11.0-alpha.0",
+  "version": "0.11.0-alpha.1",
   "description": "Typescript map",
   "dependencies": {
-    "@dikac/t-array": "^0.26.0-alpha.1",
+    "@dikac/t-array": "^0.26.0-alpha.3",
     "@dikac/t-iterable": "^0.5.0-alpha.0",
-    "@dikac/t-object": "^0.37.0-alpha.1",
-    "@dikac/t-boolean": "^0.11.0-beta.1",
-    "@dikac/t-value": "^0.15.0-beta.0",
-    "@dikac/t-function": "^0.15.0-beta.5",
-    "@dikac/t-string": "^0.16.0-alpha.1"
+    "@dikac/t-object": "^0.37.0-alpha.3",
+    "@dikac/t-boolean": "^0.11.0-beta.4",
+    "@dikac/t-value": "^0.15.0-beta.2",
+    "@dikac/t-function": "^0.15.0-beta.7",
+    "@dikac/t-string": "^0.16.0-alpha.3"
   },
   "devDependencies": {
     "@types/jasmine": "^3.10.2",

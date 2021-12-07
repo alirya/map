@@ -1,7 +1,8 @@
 import MapOfParameters from "./map-of-parameters";
-import MapOfParameter from "./map-of-parameter";
+import MapOfParameter, { MapOfParameterArgument } from "./map-of-parameter";
 declare namespace MapOf {
-    const Parameters: typeof MapOfParameters;
     const Parameter: typeof MapOfParameter;
+    const Parameters: typeof MapOfParameters;
+    type Argument<Key, Value> = MapOfParameterArgument<Key, Value>;
 }
 export default MapOf;
