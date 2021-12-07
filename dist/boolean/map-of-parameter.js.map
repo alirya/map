@@ -1,1 +1,0 @@
-{"version":3,"file":"map-of-parameter.js","sourceRoot":"","sources":["../../src/boolean/map-of-parameter.ts"],"names":[],"mappings":"AAAA,OAAO,eAAe,MAAM,qBAAqB,CAAC;AAwBlD,MAAM,CAAC,OAAO,UAAU,cAAc,CAClC,GAAqB,EACrB,EACI,GAAG,EACH,KAAK,GACyF;IAGlG,OAAO,eAAe,CAAC,GAAG,EAAE,KAAK,EAAE,GAAG,CAAC,CAAA;AAE3C,CAAC"}
