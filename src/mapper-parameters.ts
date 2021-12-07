@@ -15,7 +15,6 @@ export default function MapperParameters<
     MappedValue,
 >(
     value: Map<Key, Value>,
-    //converter:(key: Key, value: Value)=>[MappedKey, MappedValue]
     converter : Callable<[key:Key, value:Value], [key:MappedKey, value:MappedValue]>
 ) : Map<MappedKey, MappedValue> {
 
