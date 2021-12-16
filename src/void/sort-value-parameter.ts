@@ -1,4 +1,3 @@
-import BaseSortValue from "../sort-value-parameters";
 import Callable from "@dikac/t-function/callable";
 import MapContainer from "../map/map";
 import Value from "@dikac/t-value/value";
