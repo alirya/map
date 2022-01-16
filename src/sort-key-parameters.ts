@@ -1,4 +1,4 @@
-import Callable from "@alirya/function/callable";
+import Callable from '@alirya/function/callable';
 
 export default function SortKeyParameters<Key, Value>(
     map : Map<Key, Value>,

@@ -1,7 +1,7 @@
-import Value from "@alirya/value/value";
-import MapContainer from "./map/map";
-import Callable from "@alirya/function/callable";
-import MapperParameters from "./mapper-parameters";
+import Value from '@alirya/value/value';
+import MapContainer from './map/map';
+import Callable from '@alirya/function/callable';
+import MapperParameters from './mapper-parameters';
 /**
  * map a {@see Map} object
  *

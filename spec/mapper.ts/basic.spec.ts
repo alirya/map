@@ -1,8 +1,8 @@
-import Mapper from "../../dist/mapper-parameters";
+import Mapper from '../../dist/mapper-parameters';
 
-it("force console log", () => { spyOn(console, 'log').and.callThrough();});
+it('force console log', () => { spyOn(console, 'log').and.callThrough();});
 
-it("test", function() {
+it('test', function() {
 
     const source = new Map<number, number>();
     source.set(1, 2);

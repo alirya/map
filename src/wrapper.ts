@@ -1,5 +1,5 @@
-import InferKey from "./key/infer";
-import InferValue from "./value/infer";
+import InferKey from './key/infer';
+import InferValue from './value/infer';
 
 export default class Wrapper<
     MapT extends Map<unknown, unknown>

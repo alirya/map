@@ -1,7 +1,7 @@
-import SortKeyParameters from "./sorkey-parameters";
-import MapContainer from "./map/map";
-import Value from "@alirya/value/value";
-import Callable from "@alirya/function/callable";
+import SortKeyParameters from './sorkey-parameters';
+import MapContainer from './map/map';
+import Value from '@alirya/value/value';
+import Callable from '@alirya/function/callable';
 
 export default function SortValueParameter<Key, Val>(
     {
@@ -10,7 +10,7 @@ export default function SortValueParameter<Key, Val>(
     } : MapContainer<Map<Key, Val>> & {
         compare : Callable<[Key, Key], number>
     }
-) : Map<Key, Val>
+) : Map<Key, Val>;
 
 export default function SortValueParameter<Key, Val>(
     {
@@ -19,7 +19,7 @@ export default function SortValueParameter<Key, Val>(
     } : Value<Map<Key, Value>> & {
         compare : Callable<[Key, Key], number>
     }
-) : Map<Key, Val>
+) : Map<Key, Val>;
 
 export default function SortValueParameter<Key, Val>(
     {
@@ -31,6 +31,6 @@ export default function SortValueParameter<Key, Val>(
     }
 ) : Map<Key, Val> {
 
-    return SortKeyParameters(map || value, compare)
+    return SortKeyParameters(map || value, compare);
 }
 

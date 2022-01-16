@@ -19,7 +19,7 @@ export default function ReplaceParameters<Key, Value>(
 
             destination.delete(key);
         }
-    })
+    });
 
     source.forEach((value, key) => destination.set(key, value));
 

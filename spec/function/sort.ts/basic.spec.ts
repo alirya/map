@@ -1,9 +1,9 @@
-import Sort from "../../../dist/function/sorparameters";
-import Shuffle from "@alirya/array/shuffle-parameters";
+import Sort from '../../../dist/function/sorparameters';
+import Shuffle from '@alirya/array/shuffle-parameters';
 
-it("force console log", () => { spyOn(console, 'log').and.callThrough();});
+it('force console log', () => { spyOn(console, 'log').and.callThrough();});
 
-it("test", function() {
+it('test', function() {
 
     const map = new Map<number, number>();
     const expects : [number, number][] = [

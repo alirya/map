@@ -7,7 +7,7 @@
  * @param source
  * @constructor
  */
-import ReplaceParameters from "./replace-parameters";
+import ReplaceParameters from './replace-parameters';
 
 export default function ReplaceParameter<Key, Value>(
     {

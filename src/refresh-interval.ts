@@ -57,7 +57,7 @@ export default class RefreshInterval<Key, Value, Return = any> extends Map<Key, 
             this.call();
             this.next();
 
-        }, this.#milliseconds)
+        }, this.#milliseconds);
     }
 
     get seconds() : number {

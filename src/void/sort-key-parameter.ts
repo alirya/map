@@ -1,7 +1,7 @@
-import Callable from "@alirya/function/callable";
-import MapContainer from "../map/map";
-import Value from "@alirya/value/value";
-import SortKeyParameters from "./sorkey-parameters";
+import Callable from '@alirya/function/callable';
+import MapContainer from '../map/map';
+import Value from '@alirya/value/value';
+import SortKeyParameters from './sorkey-parameters';
 
 export default function SortKeyParameter<Key, Val>(
     {
@@ -31,5 +31,5 @@ export default function SortKeyParameter<Key, Val>(
     }
 ) : void {
 
-    SortKeyParameters(map || value, compare)
+    SortKeyParameters(map || value, compare);
 }

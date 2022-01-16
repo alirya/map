@@ -1,5 +1,5 @@
-import BaseSortKey from "../sorkey-parameters";
-import Callable from "@alirya/function/callable";
+import BaseSortKey from '../sorkey-parameters';
+import Callable from '@alirya/function/callable';
 
 export default function SortKeyParameters<Key, Value>(
     map : Map<Key, Value>,

@@ -1,4 +1,4 @@
-import Callable from "@alirya/function/callable";
+import Callable from '@alirya/function/callable';
 
 export default function SortParameters<Key, Value>(
     value : Map<Key, Value>,
@@ -9,5 +9,5 @@ export default function SortParameters<Key, Value>(
 
     const sorted = arrays.sort(compare);
 
-    return new Map<Key, Value>(sorted)
+    return new Map<Key, Value>(sorted);
 }

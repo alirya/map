@@ -1,5 +1,5 @@
-import BaseSort from "../sorparameters";
-import Callable from "@alirya/function/callable";
+import BaseSort from '../sorparameters';
+import Callable from '@alirya/function/callable';
 
 export default function SortParameters<Key, Value>(
     map : Map<Key, Value>,
