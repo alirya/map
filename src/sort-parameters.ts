@@ -1,4 +1,4 @@
-import Callable from "@dikac/t-function/callable";
+import Callable from "@alirya/function/callable";
 
 export default function SortParameters<Key, Value>(
     value : Map<Key, Value>,

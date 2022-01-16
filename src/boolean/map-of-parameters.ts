@@ -1,4 +1,4 @@
-import Guard from "@dikac/t-boolean/function/guard";
+import Guard from "@alirya/boolean/function/guard";
 
 export default function MapOfParameters<Value>(
     map : Map<unknown, Value>,

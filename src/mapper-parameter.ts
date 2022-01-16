@@ -1,6 +1,6 @@
-import Value from "@dikac/t-value/value";
+import Value from "@alirya/value/value";
 import MapContainer from "./map/map";
-import Callable from "@dikac/t-function/callable";
+import Callable from "@alirya/function/callable";
 import MapperParameters from "./mapper-parameters";
 /**
  * map a {@see Map} object

@@ -1,5 +1,5 @@
 import MapOfParameters from "./map-of-parameters";
-import Guard from "@dikac/t-boolean/function/guard";
+import Guard from "@alirya/boolean/function/guard";
 
 export type MapOfParameterArgument<Key, Value> = {
 

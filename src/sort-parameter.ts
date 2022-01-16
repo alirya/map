@@ -1,7 +1,7 @@
-import Callable from "@dikac/t-function/callable";
-import Value from "@dikac/t-value/value";
+import Callable from "@alirya/function/callable";
+import Value from "@alirya/value/value";
 import MapContainer from "./map/map";
-import SortParameters from "./sort-parameters";
+import SortParameters from "./sorparameters";
 
 export default function SortParameter<Key, Val>(
     {

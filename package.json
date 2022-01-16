@@ -1,15 +1,15 @@
 {
-  "name": "@dikac/t-map",
+  "name": "@alirya/map",
   "version": "0.11.0-alpha.2",
   "description": "Typescript map",
   "dependencies": {
-    "@dikac/t-array": "^0.26.0-alpha.4",
-    "@dikac/t-iterable": "^0.5.0-alpha.1",
-    "@dikac/t-object": "^0.37.0-alpha.5",
-    "@dikac/t-boolean": "^0.11.0-beta.6",
-    "@dikac/t-value": "^0.15.0-beta.2",
-    "@dikac/t-function": "^0.15.0-beta.9",
-    "@dikac/t-string": "^0.16.0-alpha.4"
+    "@alirya/array": "^0.26.0-alpha.4",
+    "@alirya/iterable": "^0.5.0-alpha.2",
+    "@alirya/object": "^0.37.0-alpha.5",
+    "@alirya/boolean": "^0.11.0-beta.6",
+    "@alirya/value": "^0.15.0-beta.2",
+    "@alirya/function": "^0.15.0-beta.9",
+    "@alirya/string": "^0.16.0-alpha.4"
   },
   "devDependencies": {
     "@types/jasmine": "^3.10.2",
@@ -22,7 +22,9 @@
     "npm-run-all": "^4.1.5",
     "rimraf": "^3.0.2",
     "ts-cleaner": "^1.0.5",
-    "typescript": "4.0.2"
+    "typescript": "^4.5.2",
+    "tslint": "^5.13.0",
+    "typedoc": "^0.22.10"
   },
   "scripts": {
     "spec-run-js": "node -r esm node_modules/jasmine/bin/jasmine.js --config=./jasmine.json",
@@ -40,6 +42,9 @@
     "postrelease": "npm publish ./dist",
     "prerelease": "npm-run-all _release-remove-compile-cache compile _release_copy-meta-files",
     "postpublish": "rimraf package.json package-lock.json LICENSE Readme.md .npmignore",
+    "lint": "tslint --project ./tslint.json",
+    "lint-fix": "tslint --project ./tslint.json --fix",
+    "doc-generate": "npm-run-all _doc-clean _doc-generate",
     "_compile-script": "tsc",
     "_spec-ensure-directory": "mkdirp dist-spec",
     "_compile-script-watch": "tsc -w",
@@ -47,9 +52,21 @@
     "_spec-compile-watch-script": "tsc -w -p tsconfig-spec.json",
     "_compile-ensure-directory": "mkdirp dist",
     "_release_copy-meta-files": "cpy package.json package-lock.json LICENSE Readme.md .npmignore dist",
-    "_release-remove-compile-cache": "rimraf ./dist/compiler-cache"
+    "_release-remove-compile-cache": "rimraf ./dist/compiler-cache",
+    "_doc-generate": "typedoc --entryPointStrategy expand ./src --out docs",
+    "_doc-clean": "rimraf docs"
   },
-  "author": "",
+  "publishConfig": {
+    "directory": "dist"
+  },
+  "author": {
+    "name": "Andika Candra"
+  },
   "private": true,
-  "license": "MIT"
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/alirya/map",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alirya/map"
+  }
 }

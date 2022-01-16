@@ -1,2 +1,2 @@
-# t-map
+# map
 typescript map

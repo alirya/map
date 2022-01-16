@@ -1,5 +1,5 @@
 import MapContainer from "../map/map";
-import Separator from "@dikac/t-string/separator/separator";
+import Separator from "@alirya/string/separator/separator";
 
 export default function StringParameter (
     {
