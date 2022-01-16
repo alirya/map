@@ -1,4 +1,4 @@
-import BaseSortValue from '../sorvalue-parameters';
+import BaseSortValue from '../sort-value-parameters';
 import Callable from '@alirya/function/callable';
 
 export default function SortValueParameters<Key, Value>(

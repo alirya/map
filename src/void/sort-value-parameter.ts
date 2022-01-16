@@ -1,7 +1,7 @@
 import Callable from '@alirya/function/callable';
 import MapContainer from '../map/map';
 import Value from '@alirya/value/value';
-import SortValueParameters from './sorvalue-parameters';
+import SortValueParameters from './sort-value-parameters';
 
 export default function SortValueParameter<Key, Val>(
     {

@@ -1,4 +1,4 @@
-import SortValueParameters from './sorvalue-parameters';
+import SortValueParameters from './sort-value-parameters';
 import MapContainer from './map/map';
 import Value from '@alirya/value/value';
 import Callable from '@alirya/function/callable';

@@ -1,4 +1,4 @@
-import Sort from '../../../dist/function/sorparameters';
+import Sort from '../../../dist/function/sort-parameters';
 import Shuffle from '@alirya/array/shuffle-parameters';
 
 it('force console log', () => { spyOn(console, 'log').and.callThrough();});

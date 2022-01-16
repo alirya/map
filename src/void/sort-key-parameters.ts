@@ -1,4 +1,4 @@
-import BaseSortKey from '../sorkey-parameters';
+import BaseSortKey from '../sort-key-parameters';
 import Callable from '@alirya/function/callable';
 
 export default function SortKeyParameters<Key, Value>(

@@ -1,4 +1,4 @@
-import SortKey from '../../../dist/function/sorkey-parameters';
+import SortKey from '../../../dist/function/sort-key-parameters';
 import Shuffle from '@alirya/array/shuffle-parameters';
 
 it('force console log', () => { spyOn(console, 'log').and.callThrough();});
