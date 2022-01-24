@@ -1,4 +1,4 @@
-import Sort from '../../../dist/function/sort-parameters';
+import SortKey from '../../../dist/void/sort-key-parameters';
 import Shuffle from '@alirya/array/shuffle-parameters';
 
 it('force console log', () => { spyOn(console, 'log').and.callThrough();});
@@ -19,7 +19,7 @@ it('test', function() {
 
     expect([...map.entries()]).not.toEqual(expects);
 
-    Sort(map, ([k1, v1], [k2, v2])=>v1 - v2);
+    SortKey(map, (v1, v2)=>v1 - v2);
 
     expect([...map.entries()]).toEqual(expects);
 
