@@ -3,13 +3,13 @@
   "version": "0.11.1",
   "description": "Typescript map",
   "dependencies": {
-    "@alirya/array": "0.26.0",
-    "@alirya/iterable": "0.5.0",
-    "@alirya/object": "0.37.1",
-    "@alirya/boolean": "0.11.0",
-    "@alirya/value": "0.15.0",
-    "@alirya/function": "0.15.0",
-    "@alirya/string": "0.16.1"
+    "@alirya/array": "^0.26.0",
+    "@alirya/iterable": "^0.5.0",
+    "@alirya/object": "^0.37.1",
+    "@alirya/boolean": "^0.11.0",
+    "@alirya/value": "^0.15.0",
+    "@alirya/function": "^0.15.0",
+    "@alirya/string": "^0.16.2"
   },
   "homepage": "https://github.com/alirya/map",
   "repository": {
