@@ -1,6 +1,6 @@
 import SortValueParameters from "./sort-value-parameters";
 
-export default class Priority<Key> extends Map<Key, number> {
+export default class Priority<Key, Config extends Record<'priority', number> = Record<'priority', number>> extends Map<Key, Config> {
 
     private dirty : boolean = true;
 
@@ -14,7 +14,7 @@ export default class Priority<Key> extends Map<Key, number> {
         // early dirty to prevent recursive call
         this.dirty = false;
 
-        const sorted = SortValueParameters(this, (data1, data2)=>data2-data1);
+        const sorted = SortValueParameters(this, (data1, data2)=>data2.priority - data1.priority);
 
         this.clear();
 
@@ -24,25 +24,25 @@ export default class Priority<Key> extends Map<Key, number> {
         }
     }
 
-    [Symbol.iterator](): IterableIterator<[Key, number]>{
+    [Symbol.iterator](): IterableIterator<[Key, Config]>{
 
         this.rebuild();
         return super[Symbol.iterator]();
     }
 
-    set(key: Key, value: number): this {
+    set(key: Key, value: Config): this {
 
         this.dirty = true;
         return super.set(key, value);
     }
 
-    entries(): IterableIterator<[Key, number]> {
+    entries(): IterableIterator<[Key, Config]> {
 
         this.rebuild();
         return super.entries();
     }
 
-    forEach(callbackfn: (value: number, key: Key, map: Priority<Key>) => void, thisArg?: any): void {
+    forEach(callbackfn: (value: Config, key: Key, map: Priority<Key, Config>) => void, thisArg?: any): void {
 
         this.rebuild();
         return super.forEach(callbackfn, thisArg);
@@ -54,7 +54,7 @@ export default class Priority<Key> extends Map<Key, number> {
         return super.keys();
     }
 
-    values(): IterableIterator<number> {
+    values(): IterableIterator<Config> {
 
         this.rebuild();
         return super.values();
