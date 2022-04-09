@@ -5,7 +5,7 @@
   "dependencies": {
     "tslib": "^2.3.1",
     "@alirya/array": "^0.26.0",
-    "@alirya/iterable": "^0.5.1",
+    "@alirya/iterable": "^0.5.2",
     "@alirya/object": "^0.37.2",
     "@alirya/boolean": "^0.11.0",
     "@alirya/value": "^0.15.0",

@@ -1,6 +1,12 @@
-import SortValueParameters from "./sort-value-parameters";
+import SortValueParameters from "./void/sort-value-parameters";
+import Value from '@alirya/value/value';
+import Wrapper from './wrapper';
 
-export default class Priority<Key, Config extends Record<'priority', number> = Record<'priority', number>> extends Map<Key, Config> {
+export interface PriorityValue<Type = unknown> extends Value<Type>   {
+    priority ?: number;
+}
+
+export default class Priority<Key, Value extends PriorityValue = PriorityValue> extends Wrapper<Map<Key, Value>> {
 
     private dirty : boolean = true;
 
@@ -14,35 +20,40 @@ export default class Priority<Key, Config extends Record<'priority', number> = R
         // early dirty to prevent recursive call
         this.dirty = false;
 
-        const sorted = SortValueParameters(this, (data1, data2)=>data2.priority - data1.priority);
+       SortValueParameters(
+            this,
+            (data1, data2) => (data2.priority ?? 0) - (data1.priority ?? 0)
+        );
 
-        this.clear();
-
-        for (const [value, priority] of sorted) {
-
-            super.set(value, priority)
-        }
     }
 
-    [Symbol.iterator](): IterableIterator<[Key, Config]>{
+    [Symbol.iterator](): IterableIterator<[Key, Value]>{
 
         this.rebuild();
         return super[Symbol.iterator]();
     }
 
-    set(key: Key, value: Config): this {
+
+    /**
+     * set value with given config
+     *
+     * @param value
+     * @param config
+     * priority default to 0 if not set
+     */
+    set(value: Key, config: Value ): this {
 
         this.dirty = true;
-        return super.set(key, value);
+        return super.set(value, config);
     }
 
-    entries(): IterableIterator<[Key, Config]> {
+    entries(): IterableIterator<[Key, Value]> {
 
         this.rebuild();
         return super.entries();
     }
 
-    forEach(callbackfn: (value: Config, key: Key, map: Priority<Key, Config>) => void, thisArg?: any): void {
+    forEach(callbackfn: (value: Value, key: Key, map: Priority<Key, Value>) => void, thisArg?: any): void {
 
         this.rebuild();
         return super.forEach(callbackfn, thisArg);
@@ -54,7 +65,7 @@ export default class Priority<Key, Config extends Record<'priority', number> = R
         return super.keys();
     }
 
-    values(): IterableIterator<Config> {
+    values(): IterableIterator<Value> {
 
         this.rebuild();
         return super.values();
