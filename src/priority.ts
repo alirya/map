@@ -1,4 +1,4 @@
-import {SortValueParameters} from "./void/sort-value";
+import {SortValueParameters} from './void/sort-value';
 import Value from '@alirya/value/value';
 import Wrapper from './wrapper';
 
