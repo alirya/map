@@ -1,6 +1,6 @@
 import Value from '@alirya/value/value';
 import Wrapper from './wrapper';
-import MapParameters from '@alirya/iterable/map-parameters';
+import {MapParameters} from '@alirya/iterable/map';
 
 export interface OnceValue<Type = unknown> extends Value<Type>   {
     once ?: boolean;

@@ -1,5 +1,5 @@
-import SortKey from '../../../dist/void/sort-key-parameters';
-import Shuffle from '@alirya/array/shuffle-parameters';
+import {SortKeyParameters} from '../../../dist/void/sort-key';
+import {ShuffleParameters} from '@alirya/array/shuffle';
 
 it('force console log', () => { spyOn(console, 'log').and.callThrough();});
 
@@ -15,11 +15,11 @@ it('test', function() {
         [6, 6],
     ];
 
-    Shuffle(expects).forEach(value => map.set(...value));
+    ShuffleParameters(expects).forEach(value => map.set(...value));
 
     expect([...map.entries()]).not.toEqual(expects);
 
-    SortKey(map, (v1, v2)=>v1 - v2);
+    SortKeyParameters(map, (v1, v2)=>v1 - v2);
 
     expect([...map.entries()]).toEqual(expects);
 
