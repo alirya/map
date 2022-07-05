@@ -1,5 +1,5 @@
-import Priority from "../../dist/priority";
-import Shuffle from "@alirya/array/shuffle-parameters";
+import Priority from '../../dist/priority';
+import Shuffle from '@alirya/array/shuffle-parameters';
 import {PriorityValue} from '../../dist/priority';
 
 it('force console log', () => { spyOn(console, 'log').and.callThrough();});
