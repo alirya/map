@@ -1,5 +1,5 @@
-import {SortValueParameters} from '../../../dist/void/sort-value';
-import Shuffle from '@alirya/array/shuffle-parameters';
+import {SortValueParameters} from '../../../dist/void/sort-value.js';
+import Shuffle from '@alirya/array/shuffle-parameters.js';
 
 it('force console log', () => { spyOn(console, 'log').and.callThrough();});
 

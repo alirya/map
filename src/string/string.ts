@@ -1,5 +1,5 @@
-import MapContainer from '../map/map';
-import Separator from '@alirya/string/separator/separator';
+import MapContainer from '../map/map.js';
+import Separator from '@alirya/string/separator/separator.js';
 
 export function StringParameters (
     map : Map<string, string>,

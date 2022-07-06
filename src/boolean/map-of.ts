@@ -1,4 +1,4 @@
-import Guard from '@alirya/boolean/function/guard';
+import Guard from '@alirya/boolean/function/guard.js';
 
 export function MapOfParameters<Value>(
     map : Map<unknown, Value>,

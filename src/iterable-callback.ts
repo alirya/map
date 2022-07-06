@@ -1,8 +1,8 @@
-import Value from '@alirya/value/value';
-import IterableContainer from '@alirya/iterable/iterable/iterable';
-import MapContainer from './map/map';
-import Callback from '@alirya/function/callback/callback';
-import Callable from '@alirya/function/callable';
+import Value from '@alirya/value/value.js';
+import IterableContainer from '@alirya/iterable/iterable/iterable.js';
+import MapContainer from './map/map.js';
+import Callback from '@alirya/function/callback/callback.js';
+import Callable from '@alirya/function/callable.js';
 
 export function IterableCallbackParameters<Key, Value>(
     value : Iterable<Value>,

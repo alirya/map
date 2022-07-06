@@ -1,7 +1,7 @@
-import BaseSortKey from '../sort-key';
-import Callable from '@alirya/function/callable';
-import MapContainer from '../map/map';
-import Value from '@alirya/value/value';
+import BaseSortKey from '../sort-key.js';
+import Callable from '@alirya/function/callable.js';
+import MapContainer from '../map/map.js';
+import Value from '@alirya/value/value.js';
 
 export function SortKeyParameters<Key, Value>(
     map : Map<Key, Value>,
