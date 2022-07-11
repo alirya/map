@@ -1,6 +1,6 @@
 {
   "name": "@alirya/map",
-  "version": "0.13.0",
+  "version": "0.13.1",
   "description": "Typescript map",
   "publishConfig": {
     "directory": "dist"
@@ -16,13 +16,13 @@
   },
   "dependencies": {
     "tslib": "^2.3.1",
-    "@alirya/array": "^0.27.0",
-    "@alirya/iterable": "^0.6.0",
-    "@alirya/object": "^0.38.0",
-    "@alirya/boolean": "^0.12.0",
-    "@alirya/value": "^0.16.0",
-    "@alirya/function": "^0.17.0",
-    "@alirya/string": "^0.17.0"
+    "@alirya/array": "^0.27.1",
+    "@alirya/iterable": "^0.6.1",
+    "@alirya/object": "^0.38.1",
+    "@alirya/boolean": "^0.12.1",
+    "@alirya/value": "^0.16.1",
+    "@alirya/function": "^0.17.1",
+    "@alirya/string": "^0.17.1"
   },
   "devDependencies": {
     "@types/jasmine": "^3.10.2",
