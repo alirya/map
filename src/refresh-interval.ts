@@ -12,7 +12,7 @@ export default class RefreshInterval<Key, Value, Return = any> extends Map<Key, 
         milliseconds : number,
         public callback : (set : RefreshInterval<Key, Value>) => Return,
         values?: readonly [Key, Value][],
-        start: boolean = true
+        start = true
     ) {
         super(values);
         this.milliseconds = milliseconds;

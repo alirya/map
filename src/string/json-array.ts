@@ -1,8 +1,8 @@
 export default function JsonArray(map : Map<any, any>) : string {
 
-    let array : [string, string][] = [];
+    const array : [string, string][] = [];
 
-    for(let [key, value] of map) {
+    for(const [key, value] of map) {
 
         array.push([key, value]);
     }

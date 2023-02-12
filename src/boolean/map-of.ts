@@ -1,4 +1,4 @@
-import Guard from '@alirya/boolean/function/guard';
+import Guard from '@alirya/boolean/function/guard.js';
 
 export function MapOfParameters<Value>(
     map : Map<unknown, Value>,
@@ -17,7 +17,7 @@ export function MapOfParameters<Key, Value>(
     key : Guard<unknown, Key> = function (v) {return true;} as Guard<unknown, Key>,
 ) : map is Map<Key, Value> {
 
-    for (let [k, v] of map) {
+    for (const [k, v] of map) {
 
         if(!key(k)) {
 

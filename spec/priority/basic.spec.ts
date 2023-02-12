@@ -1,6 +1,6 @@
-import Priority from '../../dist/priority';
-import Shuffle from '@alirya/array/shuffle-parameters';
-import {PriorityValue} from '../../dist/priority';
+import Priority from '../../dist/priority.js';
+import {PriorityValue} from '../../dist/priority.js';
+import {ShuffleParameters} from '@alirya/array/shuffle.js';
 
 it('force console log', () => { spyOn(console, 'log').and.callThrough();});
 
@@ -17,7 +17,7 @@ describe('test', function() {
     ];
 
     const source = new Priority<string>(
-        new Map(Shuffle(sorted).map(value=>[value.value, value]))
+        new Map(ShuffleParameters(sorted).map(value=>[value.value, value]))
     );
 
     it('test', function() {

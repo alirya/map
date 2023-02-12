@@ -1,5 +1,5 @@
-import MapContainer from '../map/map';
-import Separator from '@alirya/string/separator/separator';
+import MapContainer from '../map/map.js';
+import Separator from '@alirya/string/separator/separator.js';
 
 export function StringParameters (
     map : Map<string, string>,
@@ -7,9 +7,9 @@ export function StringParameters (
     associativeDelimiter : string,
 ) : string {
 
-    let buffer : string[] = [];
+    const buffer : string[] = [];
 
-    for(let [key, value] of map) {
+    for(const [key, value] of map) {
 
         buffer.push(key + associativeDelimiter + value);
     }
@@ -29,9 +29,9 @@ export function StringParameter (
     } : StringArgument
 ) : string {
 
-    let buffer : string[] = [];
+    const buffer : string[] = [];
 
-    for(let [key, val] of map) {
+    for(const [key, val] of map) {
 
         buffer.push(key + associativeSeparator + val);
     }
