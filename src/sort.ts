@@ -1,5 +1,5 @@
-import Callable from '@alirya/function/callable.js';
-import Value from '@alirya/value/value.js';
+import Callable from '@axiona/function/callable.js';
+import Value from '@axiona/value/value.js';
 import MapContainer from './map/map.js';
 
 export function SortParameters<Key, Value>(

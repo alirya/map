@@ -1,6 +1,6 @@
-import Value from '@alirya/value/value.js';
+import Value from '@axiona/value/value.js';
 import MapContainer from './map/map.js';
-import Callable from '@alirya/function/callable.js';
+import Callable from '@axiona/function/callable.js';
 
 /**
  * map a {@see Map} object

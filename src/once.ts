@@ -1,6 +1,6 @@
-import Value from '@alirya/value/value.js';
+import Value from '@axiona/value/value.js';
 import Wrapper from './wrapper.js';
-import {MapParameters} from '@alirya/iterable/map.js';
+import {MapParameters} from '@axiona/iterable/map.js';
 
 export interface OnceValue<Type = unknown> extends Value<Type>   {
     once ?: boolean;

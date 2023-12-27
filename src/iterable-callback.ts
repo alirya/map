@@ -1,8 +1,8 @@
-import Value from '@alirya/value/value.js';
-import IterableContainer from '@alirya/iterable/iterable/iterable.js';
+import Value from '@axiona/value/value.js';
+import IterableContainer from '@axiona/iterable/iterable/iterable.js';
 import MapContainer from './map/map.js';
-import Callback from '@alirya/function/callback/callback.js';
-import Callable from '@alirya/function/callable.js';
+import Callback from '@axiona/function/callback/callback.js';
+import Callable from '@axiona/function/callable.js';
 
 export function IterableCallbackParameters<Key, Value>(
     value : Iterable<Value>,

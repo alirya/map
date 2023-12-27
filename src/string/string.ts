@@ -1,5 +1,5 @@
 import MapContainer from '../map/map.js';
-import Separator from '@alirya/string/separator/separator.js';
+import Separator from '@axiona/string/separator/separator.js';
 
 export function StringParameters (
     map : Map<string, string>,

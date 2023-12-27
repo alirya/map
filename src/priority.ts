@@ -1,5 +1,5 @@
 import {SortValueParameters} from './void/sort-value.js';
-import Value from '@alirya/value/value.js';
+import Value from '@axiona/value/value.js';
 import Wrapper from './wrapper.js';
 
 export interface PriorityValue<Type = unknown> extends Value<Type>   {
